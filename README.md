@@ -20,14 +20,19 @@
 
 
 # About
-This is a command line tool for finding common vulnerabilities found in applications using websockets.
-From my experience the tools surrounding websockets are not very intuitive to work with, unless you have 
+This is a command line tool for finding common vulnerabilities in applications using websockets.
+From my experience the tools surrounding websockets are unintuitive, making them hard to work with without
 a good understaning of the protocol or the WS server itself. This tool is intended to automate the enumeration
 process for you. 
 
 # Requirements
+* Python Modules
+      * websockets
+      * asyncio
+      * ssl
 
 # Install
 
+# Usage
 
 # Contribution
