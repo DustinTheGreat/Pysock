@@ -1,4 +1,4 @@
- 
+
       /$$$$$$$            /$$$$$$                      /$$      
      | $$__  $$          /$$__  $$                    | $$      
      | $$  \ $$/$$   /$$| $$  \__/  /$$$$$$   /$$$$$$$| $$   /$$
@@ -29,11 +29,21 @@ process for you.
 
 # Install
 ```
-  - virtualenv -p python3
-  - source venv/bin/activate
-  - pip install -r requirements.txt
-  - python pysock.py -u IP/DN
+  virtualenv -p python3
+  source venv/bin/activate
+  pip install -r requirements.txt
+  python pysock.py -u IP/DN
 ```
 # Usage
-
+Currently this program is expecting a that you already know the ip address or hostname && PORT of the websockets server.
+from thereyou can run
+    parameters:
+             
 # Contribution
+
+
+# TESTING
+you can also try out the tool on your localhost by starting the server in /scripts.
+`python server.py`
+
+
