@@ -25,11 +25,7 @@ From my experience the tools surrounding websockets are unintuitive, making them
 a good understaning of the protocol or the WS server itself. This tool is intended to automate the enumeration
 process for you. 
 
-# Requirements
-* Python Modules
-      * websockets
-      * asyncio
-      * ssl
+
 
 # Install
 ```
