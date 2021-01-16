@@ -3,7 +3,7 @@ import asyncio
 import pathlib
 import ssl
 import websockets
-
+import cli
 
 
 
@@ -31,8 +31,9 @@ import websockets
 
 
 
-async def connection():
-	uri = "ws://localhost:5678"
+async def connection(url):
+	port = "5678"
+	uri = "ws://{}:{}".format(url, port)
 	async with websockets.connect(uri) as websocket:
 		##add the dictonary that you want to test against
 		name = input("Im in")
@@ -46,16 +47,17 @@ async def connection():
 
 
 	
-async def main():
+async def main(url):
 	print("Starting...")
-	await connection()
+	await connection(url)
 	print("Finishing")
 
 
 if __name__ == "__main__":
 	# import cli runner
+	args = cli.main()
 	loop = asyncio.get_event_loop()
-	loop.run_until_complete(main())
+	loop.run_until_complete(main(args))
 	# ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
 	# localhost_pem = pathlib.Path(__file__).with_name("localhost.pem")
 	# ssl_context.load_verify_locations(localhost_pem)	
