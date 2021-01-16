@@ -32,11 +32,12 @@ process for you.
       * ssl
 
 # Install
+```
   - virtualenv -p python3
   - source venv/bin/activate
   - pip install -r requirements.txt
   - python pysock.py -u IP/DN
-
+```
 # Usage
 
 # Contribution
