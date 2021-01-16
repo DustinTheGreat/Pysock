@@ -37,12 +37,13 @@ process for you.
 # Usage
 Currently this program is expecting a that you already know the ip address or hostname && PORT of the websockets server.
 from thereyou can run
-    parameters:
+    
+## Parameters:
              
 # Contribution
 
 
-# TESTING
+# Testing
 you can also try out the tool on your localhost by starting the server in /scripts.
 `python server.py`
 
