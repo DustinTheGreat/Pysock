@@ -12,7 +12,7 @@
                \______/                                        
 
 
-[![made-with-python3.7](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-python3](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
 
 # About
