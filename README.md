@@ -24,7 +24,7 @@ This is a command line tool for finding common vulnerabilities found in applicat
 From my experience the tools surrounding websockets are not very intuitive to work with, unless you have 
 a good understaning of the protocol or the WS server itself. This tool is intended to automate the enumeration
 process for you. 
-you.
+
 # Requirements
 
 # Install
