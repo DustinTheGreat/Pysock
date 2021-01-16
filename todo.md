@@ -1,19 +1,19 @@
-# top vulnerbilities to check first
+# Top Vulnerabilities (Priortized in search.)
 
-## authorization/authentication:
+## Authorization/Authentication.
 
 Client demands/Server responds, check and see what the permissions are looking like.
 Sometimes the client has toooo much control.
 
 
-## encryption/encoding
+##  Encryption/Encoding
 
-This is probobly the first thing we need to look for when designing the framework, all sockets should be upgraded to wss:// if not we can sniff all incoming/outgoing traffic.
+This is probably the first thing we need to look for when designing the framework, all sockets should be upgraded to wss:// if not we can sniff all incoming/outgoing traffic.
 
 
-## malicious input attacks
+## Malicious Input Attacks.
 
-Checking to see if all input data is sanitized properly
+Check to see if all data is properly sanitized.
 
 
 
