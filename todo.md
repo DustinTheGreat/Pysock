@@ -1,4 +1,4 @@
-#top vulnerbilities to check first
+# top vulnerbilities to check first
 
 ## authorization/authentication:
 
