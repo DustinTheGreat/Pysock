@@ -10,6 +10,8 @@ class ClientClass(object):
 		self.certs = ""
 		self.pingInterval = 5000
 		self.mode = getMode()
+		self.uID = ""
+		self.body = []
 
 	def getMode(self):
 		if args.mode = 2:
@@ -32,3 +34,7 @@ class ClientClass(object):
 
 	def autheticate(self):
 		self.autheticated = True
+
+	def getUniqueId(self):
+		return("[{}:{}]".format(self.uID, self.body))
+	
