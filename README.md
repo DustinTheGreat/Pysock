@@ -35,16 +35,14 @@ process for you.
   python pysock.py -u IP/DN
 ```
 # Usage
-Currently this program is expecting a that you already know the ip address or hostname && PORT of the websockets server.
-from thereyou can run
-    
+Currently this program is expecting  that you already know the ip address or hostname && PORT of the websockets server. With this knowledge, you can run the tool.
 ## Parameters:
              
 # Contribution
 
 
 # Testing
-you can also try out the tool on your localhost by starting the server in /scripts.
+You can also try the tool on your localhost by starting the server in /scripts.
 `python server.py`
 
 

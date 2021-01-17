@@ -6,7 +6,7 @@ class ClientClass(object):
 		self.authenticated = False
 		self.status = ""
 		self.attack = 1
-		self.port = arg.port || 8000
+		self.port = arg.port or 8000
 		self.certs = ""
 		self.pingInterval = 5000
 		self.mode = getMode()
@@ -14,7 +14,7 @@ class ClientClass(object):
 		self.body = []
 
 	def getMode(self):
-		if args.mode = 2:
+		if args.mode == 2:
 			url = '/socket.io/'
 			transport = "websockets"
 			pingInterval = 3000
