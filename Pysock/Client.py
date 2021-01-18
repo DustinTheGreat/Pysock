@@ -12,13 +12,18 @@ class ClientClass(object):
 		self.mode = getMode()
 		self.uID = ""
 		self.body = []
+		self.channel = ""
 
 	def getMode(self):
+		#Example URI with query params, need to refactor into lib
+		#/socket.io/?EIO=4&transport=polling&t=N8hyd7H&sid=lv_VI97HAXpY6yYWAAAC
+
 		if args.mode == 2:
-			url = '/socket.io/'
+			url = '/socket.io/EIO={}&transport={}'.format(str(4), "transport")
 			transport = "websockets"
 			pingInterval = 3000
-			sid = ""
+			socket = self.socket
+			sid = self.sid
 		else:
 			self.mode = 1
 			#barebone instead of socketio

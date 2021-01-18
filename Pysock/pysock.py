@@ -32,9 +32,10 @@ import cli
 
 
 async def connection(url):
-	port = "3001"
+	#port = "3001"
 	#uri = "ws://{}:{}/{}".format("url", port, queryParams)
-	uri = "ws://0.0.0.0:3001"
+	#uri = "ws://0.0.0.0:3001"
+	
 	async with websockets.connect(uri) as websocket:
 		##add the dictonary that you want to test against
 		name = input("Im in")
