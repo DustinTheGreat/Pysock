@@ -4,7 +4,7 @@ import argparse
 
 def main():
 	"""
-	runner that handles parsing logic
+	Runner that handles parsing logic.
 	"""
 	parser = argparse.ArgumentParser(description='Scanner for websocket vulnerabilities')
 	parser.add_argument('-u','--engine', help='Please enter the full uri for the websocket server)', required=True)
