@@ -24,27 +24,24 @@ import cli
 #         message = await producer()
 #         await websocket.send(message)
 
-
-
-
-
-
-
-
 async def connection(url):
 	#port = "3001"
 	#uri = "ws://{}:{}/{}".format("url", port, queryParams)
 	#uri = "ws://0.0.0.0:3001"
 	
 	async with websockets.connect(uri) as websocket:
+
 		##add the dictonary that you want to test against
 		name = input("Im in")
+		object = {
+				"socketID": "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+		}
 
-		await websocket.send(name)
-		print(f"> {name}")
-
-		greeting = await websocket.recv()
-		print(f"< {greeting}")
+		await websocket.send("ackIdentity", )
+		# print(f"> {name}")
+		while True:
+			greeting = await websocket.recv()
+			print(f"< {greeting}")
 
 
 
