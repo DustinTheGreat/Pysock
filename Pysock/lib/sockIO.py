@@ -44,7 +44,26 @@ if __name__ == "__main__":
 	sio = socketio.AsyncClient()
 	test = SocketIO()
 	print(test.pingInterval)
+#Find time and factor this in, SocketIO sucking fucking ass and is incompatible with other versions
+#this is for V2
+
+# from socketIO_client_nexus import SocketIO, BaseNamespace
 
 
+# def on_aaa_response(*args):
+#         print('[Trying to join a specified room...')
+# 				SocketIO.emit('join', {'channel': '3809A4000011h7EXbbWXWugKo'}, )
+
+# def on_bbb_response(*args):
+#         print('Just emitted bbb...')
+
+
+
+
+
+# with SocketIO("https://.com",verify=False) as SocketIO:
+#         print("conencted")
+#         SocketIO.on('reqIdentity', on_aaa_response)
+#         SocketIO.wait()
 
 
